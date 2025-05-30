@@ -58,8 +58,9 @@ body {
 
 .search-input {
   padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 20px;
+  border: 1px solid #c3bcbc;
+  background-color: #cdc9c9;
+  border-radius: 12px;
   width: 200px;
 }
 
