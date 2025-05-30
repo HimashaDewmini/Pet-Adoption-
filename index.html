@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Page - Pawstive Match</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+  <div class="header-container">
+    <div class="logo">
+      <img src="images/logo.png" alt="Pawstive Match Logo">
+    </div>
+
+    <nav class="nav-links">
+      <a href="#">Find a Pet</a>
+      <a href="#">About Us</a>
+    </nav>
+
+    <div class="header-right">
+      <input type="text" placeholder="Search" class="search-input">
+      <img src="images/user-profile.png" alt="Profile" class="profile-img">
+      <button class="post-pet-btn">Post Pet</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Find your new best friend</h1>
+    <p>Browse thousands of adoptable pets near you. Start your search today and make a difference in pet's life.</p>
+    <button>Start your search</button>
+  </section>
+
+  <!-- Category Section -->
+  <div class="category-header">
+    
+  <section class="category-section">
+    <h2>Category</h2>
+    <div class="categories">
+        <button data-category="dogs">Dogs</button>
+        <button data-category="cats">Cats</button>
+        <button data-category="rabbits">Rabbits</button>
+        <button data-category="birds">Birds</button>
+        <button data-category="other">Other</button>
+        <button data-category="all">All</button>
+    </div>
+    <div class="search-box">
+        <span class="search-icon">
+            <img src="images/search.png" alt="Search Icon" style="height: 20px;">
+        </span>
+        <input type="text" id="searchInput" placeholder="Search by breed, name, or location">
+    </div>
+
+  </section>
+
+  <!-- Featured Pets -->
+  <section class="featured-pets">
+    <h2>Featured Pets</h2>
+    <div class="pet-grid" id="petGrid">
+      <!-- JavaScript will insert pet cards here -->
+    </div>
+  </section>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <button class="prev">&lt;</button>
+    <span class="pages">1 2 3 4 5</span>
+    <button class="next">&gt;</button>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="Footer-logo">
+      <img src="images/footer-logo.png" alt="Pawstive Match Logo">
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Find Pet</a>
+      <a href="#">Contact</a>
+      <a href="#">About Us</a>
+    </div>
+    <div class="para">&copy; 2025 Pawstive Match. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
