@@ -91,7 +91,7 @@ body {
   padding: 4rem 2rem;
   text-align: center;
   color: white;
-  height: 313px;;
+  height: 333px;;
 }
 
 .hero h1 {
@@ -110,10 +110,10 @@ body {
 
 .category-header {
   position: relative;
-  width: 960px;
+  width: 1160px;
   height: 1861px;
   margin-top: 40px;
-  margin-left: 275px;
+  margin-left: 200px;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -186,8 +186,8 @@ body {
 
 .pet-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
 .pet-card {
@@ -195,7 +195,7 @@ body {
   padding: 12px;
   border-radius: 8px;
   text-align: center;
-  width: 180px;
+  width: 200px;
 }
 
 .pet-card img {
