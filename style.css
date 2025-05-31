@@ -165,7 +165,7 @@ body {
 }
 
 .search-box input[type="text"] {
-  width: 930px;
+  width: 1000px;
   padding: 10px 16px 10px 40px; 
   border: 1px solid #7a7676;
   background-color: #f0f0f0;  
