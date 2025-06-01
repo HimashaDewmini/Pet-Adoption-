@@ -276,7 +276,14 @@ body {
   height: 200px;
   object-fit: cover;
 }
-
+.pet-card h3 {
+  
+  color: black;
+}
+.pet-card p {
+  
+  color: #4F7A96;
+}
 
 /* Pagination */
 .pagination {
