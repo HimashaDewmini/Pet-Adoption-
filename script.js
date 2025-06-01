@@ -72,27 +72,36 @@ categoryButtons.forEach(button => {
   });
 });
 
-searchInput.addEventListener('input', function () {
-  const query = this.value.toLowerCase();
-
-  // Combine general pets and dogs into one array
+  //search functionality
+  searchInput.addEventListener('input', function() {
+  const query = this.value.toLowerCase().trim();
+  
+  // Search in both pets and petDogs arrays
   const allPets = [...pets, ...petDogs];
-
-  // Filter pets by matching name, breed, or location (if exists)
-  const filteredPets = allPets.filter(pet =>
-    (pet.name && pet.name.toLowerCase().includes(query)) ||
-    (pet.breed && pet.breed.toLowerCase().includes(query)) ||
-    (pet.location && pet.location.toLowerCase().includes(query))
+  const filteredPets = allPets.filter(pet => 
+    pet.name.toLowerCase().includes(query) || 
+    pet.breed.toLowerCase().includes(query)
   );
 
-  // Show filtered pets in the general grid only
+  // Always display results in petGridGeneral
   displayPets(filteredPets, petGridGeneral);
-  petGridGeneral.parentElement.style.display = 'block';
-
-  // Always hide the dogs grid
-  petGridDogs.parentElement.style.display = 'none';
+  
+  // Hide dogs grid during search
+  if (petGridDogs && petGridDogs.parentElement) {
+    petGridDogs.parentElement.style.display = 'none';
+  }
+  
+  // If search is empty, reset to initial state
+  if (query === '') {
+    displayPets(pets, petGridGeneral);
+    // Keep dogs grid hidden unless "Dogs" category is active
+    const activeCategory = document.querySelector('.categories button.active');
+    if (activeCategory && activeCategory.getAttribute('data-category') === 'dogs') {
+      displayPets(petDogs, petGridDogs);
+      petGridDogs.parentElement.style.display = 'block';
+    }
+  }
 });
-
 
 // Hamburger menu toggle
 document.getElementById('hamburger').addEventListener('click', function() {
