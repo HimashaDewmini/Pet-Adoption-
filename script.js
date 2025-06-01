@@ -95,6 +95,6 @@ searchInput.addEventListener('input', function () {
 
 
 // Hamburger menu toggle
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
-});
+document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('active');
+  });
