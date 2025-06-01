@@ -391,12 +391,45 @@ body {
 }
 
 @media (max-width: 992px) {
-  .nav-links {
+  /* .nav-links {
     margin-right: 100px;
+  } */
+   .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-right: 0;
+    transition: left 0.3s ease;
+    z-index: 5;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+  .nav-links.active {
+    left: 0;
   }
   
+  .header-right {
+    gap: 1.5rem;
+  }
+  
+  .hamburger {
+    display: block;
+    order: 1;
+  }
   .search-input {
     width: 180px;
+  }
+  .post-pet-btn {
+    padding: 8px 12px;
+    height: 36px;
+    min-width: 75px;
+    font-size: 12px;
   }
   .hero {
     padding: 4rem 2rem;
@@ -450,17 +483,17 @@ body {
   .logo {
     order: 2;
     margin-right: auto;
-    margin-left: 20px;
+    margin-left: 15px;
+    
   }
   
   .header-right {
     order: 3;
   }
-  
   .search-input {
-    display: none;
+    width: 100px;
   }
-  
+ 
   .profile-img {
     width: 32px;
     height: 32px;
@@ -506,12 +539,9 @@ body {
 
 @media (max-width: 576px) {
    .logo img {
-    width: 140px;
+    width: 120px;
   }
-  
-  .post-pet-btn {
-    display: none;
-  }
+
   
   .header {
     height: 60px;
@@ -551,6 +581,7 @@ body {
   
   .post-pet-btn {
     display: none;
+    
   }
   
   .mobile-post-btn {
