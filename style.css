@@ -258,7 +258,7 @@ body {
 }
 
 .pet-card {
-
+  margin-top: 10px;
   background: white;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -277,11 +277,11 @@ body {
   object-fit: cover;
 }
 .pet-card h3 {
-  
+  font-size: 16px;
+  font-weight: 500;
   color: black;
 }
 .pet-card p {
-  
   color: #4F7A96;
 }
 
