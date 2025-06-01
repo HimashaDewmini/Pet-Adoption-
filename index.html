@@ -52,7 +52,6 @@
         <button data-category="rabbits">Rabbits</button>
         <button data-category="birds">Birds</button>
         <button data-category="other">Other</button>
-        <button data-category="all">All</button>
     </div>
     <div class="search-box">
         <span class="search-icon">
@@ -66,17 +65,29 @@
   <!-- Featured Pets -->
   <section class="featured-pets">
     <h2>Featured Pets</h2>
-    <div class="pet-grid" id="petGrid">
+    <div class="pet-grid" id="petGridGeneral">
       <!-- JavaScript will insert pet cards here -->
     </div>
   </section>
 
-  <!-- Pagination -->
+  <section class="featured-petDogs">
+    <div class="pet-grid" id="petGridDogs">
+      <!-- JavaScript will insert pet cards here -->
+    </div>
+  </section>
+
   <div class="pagination">
-    <button class="prev">&lt;</button>
-    <span class="pages">1 2 3 4 5</span>
-    <button class="next">&gt;</button>
-  </div>
+  <button class="prev">&lt;</button>
+  <span class="pages">
+    <span class="page-number">1</span>
+    <span class="page-number">2</span>
+    <span class="page-number">3</span>
+    <span class="page-number">4</span>
+    <span class="page-number">5</span>
+  </span>
+  <button class="next">&gt;</button>
+</div>
+
 </div>
 
   <!-- Footer -->
